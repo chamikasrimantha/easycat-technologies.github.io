@@ -28,9 +28,106 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  
+
 
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    .package-list {
+      list-style: none;
+      /* Removes default bullet points */
+      padding: 0;
+      /* Removes default padding */
+      margin: 0;
+      /* Removes default margin */
+      text-align: left;
+      /* Ensures text aligns left */
+    }
+  
+    .package-list li {
+      display: flex;
+      /* Enables flexbox for alignment */
+      align-items: center;
+      /* Aligns icon and text vertically */
+      gap: 8px;
+      /* Adds spacing between icon and text */
+      padding: 8px 0;
+      /* Adds vertical spacing between items */
+      font-size: 16px;
+      /* Adjust font size */
+      color: #444;
+      /* Adjust text color */
+      text-align: left;
+      /* Ensures content inside each item aligns left */
+      transition: color 0.3s ease;
+      /* Smooth transition for text color */
+    }
+  
+    .package-list li i {
+      color: #047aed;
+      /* Icon color */
+      flex-shrink: 0;
+      /* Prevents icon from shrinking */
+    }
+  
+    .package-list li:last-child {
+      border-bottom: none;
+      /* Removes border from the last item */
+    }
+  
+    .package-list li:hover {
+      color: #047aed;
+      /* Changes text color on hover */
+    }
+  
+    /* Style for cards */
+    .services .row {
+      display: flex;
+      flex-wrap: wrap;
+      /* Ensures cards wrap on smaller screens */
+      justify-content: space-between;
+      /* Adds spacing between cards */
+    }
+  
+    .icon-box {
+      width: calc(100% - 15px);
+      /* Ensures two cards per row with a small gap */
+      box-sizing: border-box;
+      /* Includes padding and border in width */
+      margin: 10px 0;
+      /* Adds spacing between rows */
+      border: 1px solid #ddd;
+      /* Subtle border for cards */
+      padding: 20px;
+      /* Adds padding inside the cards */
+      background-color: #fff;
+      /* Background color for cards */
+      transition: background-color 0.3s ease, color 0.3s ease;
+      /* Smooth transition for hover effect */
+    }
+
+    .icon-box:hover ul>li{
+      color: lightgray;
+    }
+
+    .icon-box:hover ul>li>i{
+      color: lightgray;
+    }
+
+    .icon-box:hover ul>li>i{
+      color: lightgray;
+    }
+  
+    /* New: Responsive adjustments */
+    @media (max-width: 768px) {
+      .icon-box {
+        width: 100%;
+        /* Full width for smaller screens */
+      }
+    }
+  </style>
+  
+  
+
   <!-- =======================================================
   * Template Name: Day
   * Updated: Aug 17 2023 with Bootstrap v5.3.1
@@ -72,7 +169,7 @@
           <li><a class="nav-link scrollto" href="index.html">Home</a></li>
           <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
           <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
-          <li><a class="nav-link scrollto active" href="careers.html">Packages</a></li>
+          <li><a class="nav-link scrollto active" href="packages.html">Packages</a></li>
           <!-- <li><a class="nav-link scrollto" href="academy.html">Academy</a></li> -->
           <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
@@ -115,14 +212,90 @@
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <section class="contact" id="contact">
+    <section class="contact">
       <div class="container">
-
         <div class="row" data-aos="fade-up">
+          <!-- ======= Services Section ======= -->
+          <section class="services">
+            <div class="container">
+              <div class="row">
+                <!-- Kitten Starter (Pkg 01) -->
+                <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
+                  data-aos-delay="150">
+                  <div class="icon-box">
+                    <div class="icon"><i class="bx bx-line-chart"></i></div>
+                    <h4><a href="">Kitten Starter</a></h4>
+                    <p class="price">Price: <strong>LKR 11,900/=</strong></p>
+                    <ul class="package-list">
+                      <li><i class="bi bi-check-circle"></i> On-Page SEO Optimization</li>
+                      <li><i class="bi bi-check-circle"></i> Social Media Marketing (Free)</li>
+                      <li><i class="bi bi-check-circle"></i> Basic Website Analysis</li>
+                      <li><i class="bi bi-check-circle"></i> Keyword Research</li>
+                      <li><i class="bi bi-check-circle"></i> Google Analytics Initial Setup</li>
+                    </ul>
+                  </div>
+                </div>
 
+                <!-- Tabby Boost (Pkg 02) -->
+                <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
+                  data-aos-delay="150">
+                  <div class="icon-box">
+                    <div class="icon"><i class="bx bx-line-chart"></i></div>
+                    <h4><a href="">Tabby Boost</a></h4>
+                    <p class="price">Price: <strong>LKR 19,900/=</strong></p>
+                    <ul class="package-list">
+                      <li><i class="bi bi-check-circle"></i> On-Page SEO Optimization</li>
+                      <li><i class="bi bi-check-circle"></i> Social Media Marketing (Free)</li>
+                      <li><i class="bi bi-check-circle"></i> Complete Website Development</li>
+                      <li><i class="bi bi-check-circle"></i> Responsive Design</li>
+                      <li><i class="bi bi-check-circle"></i> Basic Content Integration</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Leopard Pro (Pkg 03) -->
+                <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
+                  data-aos-delay="150">
+                  <div class="icon-box">
+                    <div class="icon"><i class="bx bx-line-chart"></i></div>
+                    <h4><a href="">Leopard Pro</a></h4>
+                    <p class="price">Price: <strong>LKR 29,900/=</strong></p>
+                    <ul class="package-list">
+                      <li><i class="bi bi-check-circle"></i> Advanced On-Page SEO Optimization++</li>
+                      <li><i class="bi bi-check-circle"></i> Enhanced Social Media Marketing++ (Free)</li>
+                      <li><i class="bi bi-check-circle"></i> Professional Website Development</li>
+                      <li><i class="bi bi-check-circle"></i> Custom Design</li>
+                      <li><i class="bi bi-check-circle"></i> Content Strategy</li>
+                      <li><i class="bi bi-check-circle"></i> Performance Optimization</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Tiger Tech (Pkg 04) -->
+                <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
+                  data-aos-delay="150">
+                  <div class="icon-box">
+                    <div class="icon"><i class="bx bx-line-chart"></i></div>
+                    <h4><a href="">Tiger Tech</a></h4>
+                    <p class="price">Price: <strong>LKR 14,900/=</strong></p>
+                    <ul class="package-list">
+                      <li><i class="bi bi-check-circle"></i> Web Application Development - EMS</li>
+                      <li><i class="bi bi-check-circle"></i> Advanced Enterprise Management System</li>
+                      <li><i class="bi bi-check-circle"></i> Custom Solution Design</li>
+                      <li><i class="bi bi-check-circle"></i> Scalable Architecture</li>
+                      <li><i class="bi bi-check-circle"></i> Ongoing Technical Support</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section><!-- End Services Section -->
         </div>
       </div>
     </section>
+
+
+
 
   </main><!-- End #main -->
 
