@@ -62,7 +62,9 @@
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><img src="assets/img/easycat_logo_transparent.png" style="margin-top: -5px; width: 60px; height: 120px; margin-right: 0px;" alt=""><a href="index.html">easyCat</a></h1>
+      <h1 class="logo"><img src="assets/img/easycat_logo_transparent.png"
+          style="margin-top: -5px; width: 60px; height: 120px; margin-right: 0px;" alt=""><a
+          href="index.html">easyCat</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -638,8 +640,13 @@
               <button type="button" class="modern-btn call-btn" onclick="window.location.href='tel:+94757928275';">
                 <i class="bx bx-phone-call"></i> Call Us
               </button>
+              <button type="button" class="modern-btn meeting-btn"
+                onclick="window.location.href='https://calendly.com/easycattechnologies';">
+                <i class="bx bx-calendar"></i> Book a Meeting
+              </button>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -679,6 +686,17 @@
       .call-btn:hover {
         background-color: #1e7e34;
         box-shadow: 0px 6px 8px rgba(30, 126, 52, 0.2);
+      }
+
+      .meeting-btn {
+        background-color: #0044cc;
+        /* You can change this color to match your branding */
+        color: white;
+      }
+
+      .meeting-btn:hover {
+        background-color: #0033a0;
+        box-shadow: 0px 6px 8px rgba(0, 51, 160, 0.2);
       }
 
       .modern-btn i {
