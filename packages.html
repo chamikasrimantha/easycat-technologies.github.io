@@ -32,6 +32,9 @@
 
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <style>
+    .contact {
+      margin-top: -80px;
+    }
     .package-list {
       list-style: none;
       /* Removes default bullet points */
@@ -39,6 +42,7 @@
       /* Removes default padding */
       margin: 0;
       /* Removes default margin */
+      margin-top: 10px;
       text-align: left;
       /* Ensures text aligns left */
     }
@@ -52,7 +56,7 @@
       /* Adds spacing between icon and text */
       padding: 8px 0;
       /* Adds vertical spacing between items */
-      font-size: 16px;
+      font-size: 12px;
       /* Adjust font size */
       color: #444;
       /* Adjust text color */
@@ -169,7 +173,20 @@
         <ul>
           <li><a class="nav-link scrollto" href="index.html">Home</a></li>
           <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-          <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
+          <li class="dropdown">
+            <a href="index.html#services"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="custom-software-development.html">Custom
+                  Software Developemnt</a></li>
+              <li><a href="search-engine-optimization.html">Search Engine
+                  Optimization</a></li>
+              <li><a href="digital-and-social-media-marketing.html">Digital & Social Media Marketing</a>
+              </li>
+              <li><a href="ems-system.html">Employee & Salary Management System</a></li>
+              <li><a href="web-development.html">Web Design & Development</a></li>
+              <li><a href="mobile-application-development.html">Mobile Application Development</a></li>
+            </ul>
+          </li>
           <li><a class="nav-link scrollto active" href="packages.html">Packages</a></li>
           <!-- <li><a class="nav-link scrollto" href="academy.html">Academy</a></li> -->
           <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
@@ -220,8 +237,15 @@
           <section class="services">
             <div class="container">
               <div class="row">
+
+                <!-- Heading before packages -->
+                <div class="col-12 text-center mb-4">
+                  <h2>Here are our available packages</h2>
+                  <p>Choose the one that best fits your needs, or create a custom package by contacting us!</p>
+                </div>
+
                 <!-- Kitten Starter (Pkg 01) -->
-                <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
                   data-aos-delay="150">
                   <div class="icon-box">
                     <div class="icon"><i class="bi bi-search"></i></div>
@@ -237,7 +261,7 @@
                 </div>
 
                 <!-- Tabby Boost (Pkg 02) -->
-                <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
                   data-aos-delay="150">
                   <div class="icon-box">
                     <div class="icon"><i class="bi bi-browser-chrome"></i></div>
@@ -255,7 +279,7 @@
                 </div>
 
                 <!-- Leopard Pro (Pkg 03) -->
-                <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
                   data-aos-delay="150">
                   <div class="icon-box">
                     <div class="icon"><i class="bi bi-bar-chart-line"></i></div>
@@ -275,12 +299,12 @@
                 </div>
 
                 <!-- Tiger Tech (Pkg 04) -->
-                <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
                   data-aos-delay="150">
                   <div class="icon-box">
                     <div class="icon"><i class="bi bi-code"></i></div>
                     <h4><a href="">EMS</a></h4>
-                    <p class="price">Price Per Month: <strong>LKR 14,900/=</strong></p>
+                    <p class="price">Monthly: <strong>LKR 14,900/=</strong></p>
                     <ul class="package-list">
                       <li><i class="bi bi-check-circle"></i> Employee & Salary Management System</li>
                       <li><i class="bi bi-check-circle"></i> Custom Solution Design</li>
@@ -296,8 +320,16 @@
           </section><!-- End Services Section -->
         </div>
       </div>
-    </section>
 
+      <!-- Custom Message Section -->
+      <div class="row mt-2">
+        <div class="col-12 text-center">
+          <p>Didn't find the right package? You can create a custom package for your needs!</p>
+          <p>Contact us at <a href="mailto:easycattechnologies@gmail.com">easycattechnologies@gmail.com</a> or call us
+            at <a href="tel:+94757928275">+94757928275</a> now to find the right package for your needs.</p>
+        </div>
+      </div>
+    </section>
 
 
 
@@ -344,12 +376,12 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Custom Software Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">SEO</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Digital & Social Media Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">EMS Software</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Mobile App Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="custom-software-development.html">Custom Software Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="search-engine-optimization.html">SEO</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="digital-and-social-media-marketing.html">Digital & Social Media Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="ems-system.html">EMS Software</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="web-development.html">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="mobile-application-development.html">Mobile App Development</a></li>
             </ul>
           </div>
 
